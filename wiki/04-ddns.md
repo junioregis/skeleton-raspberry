@@ -1,8 +1,8 @@
-# 1. Create and configure your No-IP account
+# 4.1. Create and configure your No-IP account
 
 https://www.noip.com
 
-# 2. Install
+# 4.2. Install
 
 ```bash
 cd /tmp
@@ -14,7 +14,7 @@ sudo make
 sudo make install
 ```
 
-# 3. Create initialize script
+# 4.3. Create initialize script
 
 ```bash
 sudo nano /etc/init.d/noip
@@ -47,7 +47,7 @@ sudo chmod +x /etc/init.d/noip
 sudo /etc/init.d/noip start
 ```
 
-# 4. Allow DMZ port in your modem
+# 4.4. Allow DMZ port in your modem
 
 ```
 192.168.0.110

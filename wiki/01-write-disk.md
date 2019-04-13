@@ -1,26 +1,26 @@
-# 1. Download ISO
+# 1.1. Download ISO
 
 Raspbian Stretch Lite
 
 https://www.raspberrypi.org/downloads/raspbian/
 
-# 2. Write disk
+# 1.2. Write disk
 
-### 2.1. Plug your SDCard/SSD
+### 1.2.1. Plug your SDCard/SSD
 
-### 2.2. Get letter of your device
+### 1.2.2. Get letter of your device
 
 ```bash
 lsblk
 ```
 
-### 2.3. Unmount
+### 1.2.3. Unmount
 
 ```bash
 umount /dev/sdX
 ```
 
-### 2.4. Run
+### 1.2.4. Run
 
 ```bash
 unzip -p yyyy-mm-dd-raspbian-stretch-lite.zip | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync
@@ -28,13 +28,13 @@ unzip -p yyyy-mm-dd-raspbian-stretch-lite.zip | sudo dd of=/dev/sdX bs=4M status
 
 Unplug the SDCard/SSD from your machine after complete.
 
-# 3. Boot Raspberry PI
+# 1.3. Boot Raspberry PI
 
-### 3.1. Plug SDCard/SSD
+### 1.3.1. Plug SDCard/SSD
 
-### 3.2. Plug HDMI and Keyboard
+### 1.3.2. Plug HDMI and Keyboard
 
-### 3.3. Plug power cable
+### 1.3.3. Plug power cable
 
 Credentials
 
@@ -43,16 +43,16 @@ user: pi
 pass: raspberry
 ```
 
-# 4. Optional: Enable boot from USB
+# 1.4. Optional: Enable boot from USB
 
-### 4.1. Execute
+### 1.4.1. Execute
 
 ```bash
 echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt
 sudo reboot
 ```
 
-### 4.2. Check
+### 1.4.2. Check
 
 ```bash
 vcgencmd otp_dump | grep 17
@@ -60,7 +60,7 @@ vcgencmd otp_dump | grep 17
 
 The result must be ```17:3020000a```
 
-### 4.3. Shutdown system:
+### 1.4.3. Shutdown system:
 
 ```bash
 sudo shutdown -h now

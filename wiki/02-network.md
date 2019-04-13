@@ -1,13 +1,13 @@
-# 1. Configure interfaces
+# 2.1. Configure interfaces
 
-### 1.1. Backup
+### 2.1.1. Backup
 
 ```bash
 sudo cp /etc/network/interfaces /etc/network/interfaces.bkp
 sudo nano /etc/network/interfaces
 ```
 
-### 1.2. Choose ONE config interface
+### 2.1.2. Choose ONE config interface
 
 For ```Ethernet``` use:
 
@@ -41,14 +41,14 @@ wpa-essid ssid
 wpa-psk password
 ```
 
-### 1.3. Enable SSH
+# 2.2. Enable SSH
 
 ```bash
 sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-# 2. Connect from remote
+# 2.3. Connect from remote
 
 ```bash
 ssh pi@192.168.0.110
