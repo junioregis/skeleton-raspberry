@@ -48,7 +48,13 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-# 2.3. Connect from remote
+# 2.3. Reboot
+
+```bash
+sudo reboot
+```
+
+# 2.4. Connect from remote
 
 ```bash
 ssh pi@192.168.0.110

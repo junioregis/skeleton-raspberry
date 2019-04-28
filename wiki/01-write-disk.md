@@ -17,7 +17,7 @@ lsblk
 ### 1.2.3. Unmount
 
 ```bash
-umount /dev/sdX
+umount /dev/sdXN
 ```
 
 ### 1.2.4. Run
@@ -66,4 +66,4 @@ The result must be ```17:3020000a```
 sudo shutdown -h now
 ```
 
-Execute steps of ```Write disk``` again but with your SSD in this time.
+Execute steps again but with your SSD in this time.

@@ -1,6 +1,6 @@
 # Introduction
 
-This is a complete guide to configure your Raspberry Pi.
+This is a complete guide to configure your Raspberry Pi 3.
 
 # Wiki
 
